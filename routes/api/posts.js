@@ -36,8 +36,7 @@ router.get('/:id', auth, async (req, res) => {
   }
 });
 
-router.post(
-  '/',
+router.post('/',
   [auth, [check('text', 'Text is required').not().isEmpty()]],
   async (req, res) => {
     const errors = validationResult(req);
@@ -64,8 +63,7 @@ router.post(
   }
 );
 
-router.post(
-  '/comment/:id',
+router.post('/comment/:id',
   [auth, [check('text', 'Text is required').not().isEmpty()]],
   async (req, res) => {
     const errors = validationResult(req);
