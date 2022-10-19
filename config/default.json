@@ -1,3 +1,4 @@
 {
-    "mongoURI" : "mongodb+srv://fred_0324:fred_0324@atlascluster.ghra31t.mongodb.net/?retryWrites=true&w=majority"
+    "mongoURI" : "mongodb+srv://fred_0324:fred_0324@atlascluster.ghra31t.mongodb.net/?retryWrites=true&w=majority",
+    "jwtSecret":"mysecrettoken"
 }
